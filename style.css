@@ -1,0 +1,28 @@
+.img-padrao {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: calc(0.375rem - 1px) calc(0.375rem - 1px) 0 0;
+}
+
+.img-swap-container {
+    position: relative;
+}
+
+.img-tras {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.img-frente {
+    position: relative;
+    z-index: 2;
+    transition: opacity 1s ease-in-out;
+}
+
+.img-swap-container:hover .img-frente {
+    opacity: 0;
+}
