@@ -26,3 +26,12 @@
 .img-swap-container:hover .img-frente {
     opacity: 0;
 }
+
+.card-sith {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card-sith:hover {
+    border-color: #ffc107 !important; 
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.7); 
+}
