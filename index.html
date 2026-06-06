@@ -18,7 +18,10 @@
                 <nav class="navbar navbar-expand-md bg-dark border-bottom border-danger border-2 p-3">
                     <div class="container-fluid">
 
-                        <img src="imagens/logo.png.webp" alt="Logo Star Wars" style="height: auto; width: 180px;">
+                        <!-- Logo com link para o topo e classe hover -->
+                        <a href="#inicio">
+                            <img src="imagens/logo.png.webp" alt="Logo Star Wars" class="logo-hover" style="height: auto; width: 180px;">
+                        </a>
 
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
                             aria-controls="menu" aria-expanded="false" aria-label="Menu navegação">
@@ -28,13 +31,19 @@
                         <div class="collapse navbar-collapse" id="menu">
                             <ul class="navbar-nav ms-auto flex-md-column flex-lg-row">
                                 <li class="nav-item">
-                                    <a class="nav-link active text-white" aria-current="page" href="#">Início</a>
+                                    <a class="nav-link text-white nav-hover" aria-current="page" href="#inicio">Início</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">Serviços</a>
+                                    <a class="nav-link text-white nav-hover" href="#personagens">Personagens</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">Contato</a>
+                                    <a class="nav-link text-white nav-hover" href="#historia">História</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white nav-hover" href="#soundtracks">Soundtracks</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white nav-hover" href="#faq">FAQ</a>
                                 </li>
                             </ul>
                         </div>
@@ -43,10 +52,11 @@
             </div>
         </div>
     </header>
+    
     <main>
-        <div class="container-fluid mt-4">
+        <!-- SEÇÃO: INÍCIO (Corrigida a imagem do poster) -->
+        <div class="container-fluid mt-4" id="inicio">
             <div class="row m-2 p-3 p-md-5">
-
                 <div class="col-12 col-md-6 col-lg-8 text-white mb-4">
                     <h2 class="text-white mb-4">Olá! Seja bem-vindo(a) ao meu site.</h2>
                     <p class="fs-4">
@@ -66,9 +76,7 @@
                     <div class="alert bg-dark border border-warning border-2 text-light mt-4 shadow">
                         <div class="text-center">
                             <h3 class="text-center text-warning mb-3">Informações Técnicas</h3>
-                            <p class="mb-1"><strong>Título Original:</strong> Star Wars: Episode III - Revenge of the
-                                Sith
-                            </p>
+                            <p class="mb-1"><strong>Título Original:</strong> Star Wars: Episode III - Revenge of the Sith</p>
                             <p class="mb-1"><strong>Data de Lançamento:</strong> 19 de maio de 2005</p>
                             <p class="mb-1"><strong>Direção e Roteiro:</strong> George Lucas</p>
                             <p class="mb-1"><strong>Produção:</strong> Rick McCallum</p>
@@ -78,374 +86,332 @@
                             <p class="mb-0 text-warning"><strong>Duração:</strong> 140 minutos</p>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="bg-dark border border-secondary rounded text-center p-3 shadow-lg card-sith">
                         <h3 class="text-center text-warning mb-3">Poster Oficial</h3>
+                        <!-- Imagem ajustada com object-fit para não distorcer no mobile -->
                         <img src="imagens/poster.webp" alt="Poster do Filme Star Wars: Vingança dos Sith"
                             class="img-fluid rounded border border-warning" style="height: 500px; width: auto;">
                     </div>
                 </div>
-
-
             </div>
         </div>
 
         <hr class="border-danger opacity-100 mx-auto border-3 mt-2" style="width: 50%;">
 
-        <div class="row g-4 px-4 px-md-5">
-            <h1 class="col-12 text-center text-warning mb-4">Alguns Personagens</h1>
+        <div class="container-fluid" id="personagens">
+            <div class="row g-4 px-4 px-md-5">
+                <h1 class="col-12 text-center text-warning mb-4">Alguns Personagens</h1>
 
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card bg-dark text-light border-3 border-danger h-100 card-sith">
-
-                    <div class="img-swap-container">
-                        <img src="imagens/vader.webp" class="card-img-top img-padrao img-tras" alt="Darth Vader">
-                        <img src="imagens/anakin.webp" class="card-img-top img-padrao img-frente"
-                            alt="Anakin Skywalker">
-                    </div>
-
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-danger">Anakin Skywalker / Darth Vader</h5>
-                        <p class="card-text"><span class="text-warning">O Escolhido</span> que foi seduzido pelo Lado
-                            Sombrio da Força e se tornou Darth
-                            Vader.</p>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card bg-dark text-light border-3 border-danger h-100 card-sith">
+                        <div class="img-swap-container">
+                            <img src="imagens/vader.webp" class="card-img-top img-padrao img-tras" alt="Darth Vader">
+                            <img src="imagens/anakin.webp" class="card-img-top img-padrao img-frente"
+                                alt="Anakin Skywalker">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-danger">Anakin Skywalker / Darth Vader</h5>
+                            <p class="card-text"><span class="text-warning">O Escolhido</span> que foi seduzido pelo Lado Sombrio da Força e se tornou Darth Vader.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card bg-dark text-light border-3 border-info h-100 card-sith">
-                    <img src="imagens/obiwan.webp" class="card-img-top img-padrao" alt="Obi-Wan Kenobi">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-primary">Obi-Wan Kenobi</h5>
-                        <p class="card-text">Mestre Jedi e antigo mentor de Anakin, que tenta impedir a ascensão do
-                            Império.</p>
-
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card bg-dark text-light border-3 border-info h-100 card-sith">
+                        <img src="imagens/obiwan.webp" class="card-img-top img-padrao" alt="Obi-Wan Kenobi">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-primary">Obi-Wan Kenobi</h5>
+                            <p class="card-text">Mestre Jedi e antigo mentor de Anakin, que tenta impedir a ascensão do Império.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card bg-dark text-light border-3 border-danger h-100 card-sith">
-
-                    <div class="img-swap-container">
-                        <img src="imagens/sidious.webp" class="card-img-top img-padrao img-tras" alt="Darth Sidious">
-                        <img src="imagens/palpatine.webp" class="card-img-top img-padrao img-frente"
-                            alt="Chanceler Palpatine">
-                    </div>
-
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-danger">Palpatine / Darth Sidious</h5>
-                        <p class="card-text">O grande vilão e Lorde Sith que orquestra a queda da República Galáctica.
-                        </p>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card bg-dark text-light border-3 border-danger h-100 card-sith">
+                        <div class="img-swap-container">
+                            <img src="imagens/sidious.webp" class="card-img-top img-padrao img-tras" alt="Darth Sidious">
+                            <img src="imagens/palpatine.webp" class="card-img-top img-padrao img-frente" alt="Chanceler Palpatine">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-danger">Palpatine / Darth Sidious</h5>
+                            <p class="card-text">O grande vilão e Lorde Sith que orquestra a queda da República Galáctica.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="card bg-dark text-light border-3 border-info h-100 card-sith">
-                    <img src="imagens/padme.webp" class="card-img-top img-padrao" alt="Padmé Amidala">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-info">Padmé Amidala</h5>
-                        <p class="card-text">Senadora de Naboo e esposa secreta de Anakin, cuja tragédia pessoal serve
-                            de gatilho para a queda dele pro Lado Sombrio.</p>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card bg-dark text-light border-3 border-info h-100 card-sith">
+                        <img src="imagens/padme.webp" class="card-img-top img-padrao" alt="Padmé Amidala">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-info">Padmé Amidala</h5>
+                            <p class="card-text">Senadora de Naboo e esposa secreta de Anakin, cuja tragédia pessoal serve de gatilho para a queda dele pro Lado Sombrio.</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-        </div>
-
-        <hr class="border-danger opacity-100 mx-auto border-3 mt-5 mb-3" style="width: 50%;">
-
-        <div class="row g-4 mt-3 px-4 px-md-5">
-            <div class="col-12">
-                <h1 class="text-warning">História do Filme</h1>
-            </div>
-
-            <div class="col-12 col-lg-7 text-light" style="text-align: justify;">
-                <p>
-                    Durante as Guerras Clônicas, o Cavaleiro Jedi Anakin Skywalker vive atormentado por visões da morte
-                    de sua esposa secreta, a senadora Padmé Amidala, durante o parto. Manipulado por seus medos, ele é
-                    seduzido pelas promessas de poder do Chanceler Palpatine, que secretamente é o Lorde Sith Darth
-                    Sidious. Em busca de uma forma de salvar Padmé, Anakin trai a Ordem Jedi, cede ao Lado Sombrio da
-                    Força e assume a identidade de Darth Vader, tornando-se o novo aprendiz do Sith.
-                </p>
-
-                <p>
-                    A mando de seu novo mestre, Vader lidera um massacre no Templo Jedi, enquanto Palpatine aciona a
-                    Ordem 66. O comando faz com que os soldados clones traiam e exterminem quase todos os Jedi da
-                    galáxia. Com a Ordem praticamente aniquilada e o Conselho destruído, Palpatine manipula o Senado
-                    Galáctico e transforma a antiga República no tirânico Império Galáctico, autodeclarando-se Imperador
-                    com apoio absoluto.
-                </p>
-
-                <blockquote class="border-start border-warning border-4 ps-4 my-4 bg-dark p-3 rounded shadow">
-                    <p class="mb-2 fst-italic fs-5">"Você era o Escolhido! Foi dito que você destruiria os Sith, não que
-                        se
-                        juntaria a eles!"</p>
-                    <footer class="blockquote-footer text-danger mt-1">Obi-Wan Kenobi, durante sua batalha contra Anakin
-                        Skywalker, em Mustafar</footer>
-                </blockquote>
-
-                <p>
-                    Ao descobrir a traição, Obi-Wan Kenobi confronta Vader em um duelo brutal no planeta vulcânico
-                    Mustafar, deixando-o mutilado e à beira da morte. Paralelamente, Padmé dá à luz os gêmeos Luke e
-                    Leia, mas falece logo em seguida. Enquanto Vader é resgatado por Palpatine e confinado a uma icônica
-                    armadura cibernética negra para sobreviver, Obi-Wan e Yoda decidem separar e esconder os bebês,
-                    partindo para o exílio enquanto o Império inicia seu domínio sobre a galáxia.
-                </p>
-            </div>
-
-            <div class="col-12 col-lg-5">
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner rounded shadow-lg border border-warning border-2 overflow-hidden">
-
-                        <div class="carousel-item active">
-                            <img src="imagens/resgate.jpg" class="d-block w-100"
-                                style="height: 350px; object-fit: cover;" alt="Cena 1 - Resgate">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="imagens/cantlivewithout.jpg" class="d-block w-100"
-                                style="height: 350px; object-fit: cover;" alt="Cena 2 - I can't live without her">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="imagens/shallbeknownasdarthvader.jpg" class="d-block w-100"
-                                style="height: 350px; object-fit: cover;" alt="Cena 3 - Darth Vader">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="imagens/younglings.jpg" class="d-block w-100"
-                                style="height: 350px; object-fit: cover;" alt="Cena 4 - Younglings">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="imagens/todemocracy.jpg" class="d-block w-100"
-                                style="height: 350px; object-fit: cover;" alt="Cena 5 - To Democracy">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="imagens/dueloftheheroes.png" class="d-block w-100"
-                                style="height: 350px; object-fit: cover;" alt="Cena 6 - Duel of the Heroes">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="imagens/ihateyou.png" class="d-block w-100 rounded" alt="Cena 7 - I HATE YOU!"
-                                style="height: 350px; object-fit: cover;">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="imagens/nooo.jpeg" class="d-block w-100" style="height: 350px; object-fit: cover;"
-                                alt="Cena 8 - Noooo">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
         </div>
 
         <hr class="border-danger opacity-100 mx-auto border-3 mt-5 mb-3" style="width: 50%;">
 
-        <div class="row g-4 mt-3 px-4 px-md-5">
-
-            <div class="col-12">
-                <h1 class="text-center text-warning mb-5">Minhas Soundtracks favoritas do Filme</h1>
-            </div>
-
-
-
-            <div class="row align-items-center mt-2">
-                <h3 class="text-center" style="color: rgb(172, 6, 172);">Anakin's Dream'</h3>
-                <div class="col-12 col-md-5">
-                    <iframe data-testid="embed-iframe" style="border-radius:12px;"
-                        src="https://open.spotify.com/embed/track/11Tv6Yw69y3xVwNNe08R78?utm_source=generator&theme=0"
-                        width="100%" height="352" frameBorder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"></iframe>
-                </div>
-                <div class="col-12 col-md-7">
-
-                    <p>Escolhi essa pois ela se passa durante e após Anakin ter pesadelos com a morte de Padmé. A música
-                        é lenta e trágica, mostrando que aquele ponto é crucial para virada do Anakin futuramente para o
-                        Lado Sombrio. Além disso, ela tem nuances da música Across the Stars, a música que toca durante
-                        o casamento deles.</p>
-                </div>
-            </div>
-            <hr class="border-light opacity-100 mx-auto border-3" style="width: 30%;">
-            <div class="row align-items-center mt-2">
-                <h3 class="text-center" style="color: rgb(172, 6, 172);">Anakin's Betrayal</h3>
-
-                <div class="col-12 col-md-5">
-                    <iframe data-testid="embed-iframe" style="border-radius:12px"
-                        src="https://open.spotify.com/embed/track/4sLtmtKMmA5iCIa90tWhSe?utm_source=generator&theme=0"
-                        width="100%" height="352" frameBorder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"></iframe>
+        <!-- SEÇÃO: HISTÓRIA (Envolvida no container-fluid) -->
+        <div class="container-fluid" id="historia">
+            <div class="row g-4 mt-3 px-4 px-md-5">
+                <div class="col-12">
+                    <h1 class="text-warning">História do Filme</h1>
                 </div>
 
-                <div class="col-12 col-md-7">
-                    <p>Essa música se passa durante a execução da Ordem 66, quando os clones começam a atirar contra os
-                        Jedi, concluindo o plano de Palpatine. Essa música é trágica, e mostra o peso da cena, junto com
-                        sua tragidicidade.</p>
+                <div class="col-12 col-lg-7 text-light" style="text-align: justify;">
+                    <p>
+                        Durante as Guerras Clônicas, o Cavaleiro Jedi Anakin Skywalker vive atormentado por visões da morte
+                        de sua esposa secreta, a senadora Padmé Amidala, durante o parto. Manipulado por seus medos, ele é
+                        seduzido pelas promessas de poder do Chanceler Palpatine, que secretamente é o Lorde Sith Darth
+                        Sidious. Em busca de uma forma de salvar Padmé, Anakin trai a Ordem Jedi, cede ao Lado Sombrio da
+                        Força e assume a identidade de Darth Vader, tornando-se o novo aprendiz do Sith.
+                    </p>
+
+                    <p>
+                        A mando de seu novo mestre, Vader lidera um massacre no Templo Jedi, enquanto Palpatine aciona a
+                        Ordem 66. O comando faz com que os soldados clones traiam e exterminem quase todos os Jedi da
+                        galáxia. Com a Ordem praticamente aniquilada e o Conselho destruído, Palpatine manipula o Senado
+                        Galáctico e transforma a antiga República no tirânico Império Galáctico, autodeclarando-se Imperador
+                        com apoio absoluto.
+                    </p>
+
+                    <blockquote class="border-start border-warning border-4 ps-4 my-4 bg-dark p-3 rounded shadow">
+                        <p class="mb-2 fst-italic fs-5">"Você era o Escolhido! Foi dito que você destruiria os Sith, não que
+                            se juntaria a eles!"</p>
+                        <footer class="blockquote-footer text-danger mt-1">Obi-Wan Kenobi, durante sua batalha contra Anakin
+                            Skywalker, em Mustafar</footer>
+                    </blockquote>
+
+                    <p>
+                        Ao descobrir a traição, Obi-Wan Kenobi confronta Vader em um duelo brutal no planeta vulcânico
+                        Mustafar, deixando-o mutilado e à beira da morte. Paralelamente, Padmé dá à luz os gêmeos Luke e
+                        Leia, mas falece logo em seguida. Enquanto Vader é resgatado por Palpatine e confinado a uma icônica
+                        armadura cibernética negra para sobreviver, Obi-Wan e Yoda decidem separar e esconder os bebês,
+                        partindo para o exílio enquanto o Império inicia seu domínio sobre a galáxia.
+                    </p>
                 </div>
 
-            </div>
+                <div class="col-12 col-lg-5">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded shadow-lg border border-warning border-2 overflow-hidden">
+                            <div class="carousel-item active">
+                                <img src="imagens/resgate.jpg" class="d-block w-100" style="height: 350px; object-fit: cover;" alt="Cena 1 - Resgate">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagens/cantlivewithout.jpg" class="d-block w-100" style="height: 350px; object-fit: cover;" alt="Cena 2 - I can't live without her">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagens/shallbeknownasdarthvader.jpg" class="d-block w-100" style="height: 350px; object-fit: cover;" alt="Cena 3 - Darth Vader">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagens/younglings.jpg" class="d-block w-100" style="height: 350px; object-fit: cover;" alt="Cena 4 - Younglings">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagens/todemocracy.jpg" class="d-block w-100" style="height: 350px; object-fit: cover;" alt="Cena 5 - To Democracy">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagens/dueloftheheroes.png" class="d-block w-100" style="height: 350px; object-fit: cover;" alt="Cena 6 - Duel of the Heroes">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagens/ihateyou.png" class="d-block w-100 rounded" alt="Cena 7 - I HATE YOU!" style="height: 350px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagens/nooo.jpeg" class="d-block w-100" style="height: 350px; object-fit: cover;" alt="Cena 8 - Noooo">
+                            </div>
+                        </div>
 
-            <hr class="border-light opacity-100 mx-auto border-3" style="width: 30%;">
-
-            <div class="row align-items-center mt-2">
-                <h3 class="text-center" style="color: rgb(172, 6, 172);">Anakin vs Obi-Wan</h3>
-                <div class="col-12 col-md-5">
-                    <iframe data-testid="embed-iframe" style="border-radius:12px"
-                        src="https://open.spotify.com/embed/track/3fzL0RuACZtv5cQ6R78Sjq?utm_source=generator&theme=0"
-                        width="100%" height="352" frameBorder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"></iframe>
-                </div>
-                <div class="col-12 col-md-7">
-                    <p>Essa música é fantástica! Se passa durante o duelo de Anakin e Obi-Wan, em Mustafar. Ela
-                        intercala com a música Battle of the Heroes. Nela há uma mistura de épico com trágico, com
-                        nuances da Marcha Imperial, mostrando o Lado Sombrio de Anakin, que no momento já se tornou
-                        Darth Vader</p>
-                </div>
-
-
-            </div>
-
-            <hr class="border-light opacity-100 mx-auto border-3" style="width: 30%;">
-
-            <div class="row align-items-center mt-4">
-                <h3 class="text-center" style="color: rgb(172, 6, 172);">Battle of The Heroes</h3>
-                <div class="col-12 col-md-5">
-                    <iframe data-testid="embed-iframe" style="border-radius:12px"
-                        src="https://open.spotify.com/embed/track/1u3nu8fNWFua6mQjw4ReEt?utm_source=generator&theme=0"
-                        width="100%" height="352" frameBorder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"></iframe>
-                </div>
-
-                <div class="col-12 col-md-7">
-                    <p>Mais uma música espetacular. Ela também toca durante o duelo entre o Mestre e Padawan, com
-                        predominância no início. Ela é frenética e o nome demonstra o que está acontecendo, um duelo de
-                        heóis</p>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-
-
         </div>
+
         <hr class="border-danger opacity-100 mx-auto border-3 mt-5 mb-3" style="width: 50%;">
 
-        <div class="row px-4 px-md-5 mb-5">
-            <div class="col-12">
-                <h1 class="text-center text-warning mb-5">FAQ</h1>
+        <!-- SEÇÃO: SOUNDTRACKS (Envolvida no container-fluid) -->
+        <div class="container-fluid" id="soundtracks">
+            <div class="row g-4 mt-3 px-4 px-md-5">
+                <div class="col-12">
+                    <h1 class="text-center text-warning mb-5">Minhas Soundtracks favoritas do Filme</h1>
+                </div>
+
+                <div class="row align-items-center mt-2">
+                    <h3 class="text-center" style="color: rgb(172, 6, 172);">Anakin's Dream'</h3>
+                    <div class="col-12 col-md-5">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px;"
+                            src="https://open.spotify.com/embed/track/11Tv6Yw69y3xVwNNe08R78?utm_source=generator&theme=0"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <p>Escolhi essa pois ela se passa durante e após Anakin ter pesadelos com a morte de Padmé. A música
+                            é lenta e trágica, mostrando que aquele ponto é crucial para virada do Anakin futuramente para o
+                            Lado Sombrio. Além disso, ela tem nuances da música Across the Stars, a música que toca durante
+                            o casamento deles.</p>
+                    </div>
+                </div>
+                
+                <hr class="border-light opacity-100 mx-auto border-3" style="width: 30%;">
+                
+                <div class="row align-items-center mt-2">
+                    <h3 class="text-center" style="color: rgb(172, 6, 172);">Anakin's Betrayal</h3>
+                    <div class="col-12 col-md-5">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/4sLtmtKMmA5iCIa90tWhSe?utm_source=generator&theme=0"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <p>Essa música se passa durante a execução da Ordem 66, quando os clones começam a atirar contra os
+                            Jedi, concluindo o plano de Palpatine. Essa música é trágica, e mostra o peso da cena, junto com
+                            sua tragidicidade.</p>
+                    </div>
+                </div>
+
+                <hr class="border-light opacity-100 mx-auto border-3" style="width: 30%;">
+
+                <div class="row align-items-center mt-2">
+                    <h3 class="text-center" style="color: rgb(172, 6, 172);">Anakin vs Obi-Wan</h3>
+                    <div class="col-12 col-md-5">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/3fzL0RuACZtv5cQ6R78Sjq?utm_source=generator&theme=0"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <p>Essa música é fantástica! Se passa durante o duelo de Anakin e Obi-Wan, em Mustafar. Ela
+                            intercala com a música Battle of the Heroes. Nela há uma mistura de épico com trágico, com
+                            nuances da Marcha Imperial, mostrando o Lado Sombrio de Anakin, que no momento já se tornou
+                            Darth Vader</p>
+                    </div>
+                </div>
+
+                <hr class="border-light opacity-100 mx-auto border-3" style="width: 30%;">
+
+                <div class="row align-items-center mt-4">
+                    <h3 class="text-center" style="color: rgb(172, 6, 172);">Battle of The Heroes</h3>
+                    <div class="col-12 col-md-5">
+                        <iframe data-testid="embed-iframe" style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/1u3nu8fNWFua6mQjw4ReEt?utm_source=generator&theme=0"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <p>Mais uma música espetacular. Ela também toca durante o duelo entre o Mestre e Padawan, com
+                            predominância no início. Ela é frenética e o nome demonstra o que está acontecendo, um duelo de
+                            heóis</p>
+                    </div>
+                </div>
             </div>
+        </div>
+        
+        <hr class="border-danger opacity-100 mx-auto border-3 mt-5 mb-3" style="width: 50%;">
 
-            <div class="col-12 col-lg-8 mx-auto">
+        <!-- SEÇÃO: FAQ (Envolvida no container-fluid) -->
+        <div class="container-fluid" id="faq">
+            <div class="row px-4 px-md-5 mb-5">
+                <div class="col-12">
+                    <h1 class="text-center text-warning mb-5">FAQ</h1>
+                </div>
 
-                <div class="accordion accordion-flush" id="accordionFlushExample" data-bs-theme="dark">
-
-                    <div class="accordion-item bg-dark border-bottom border-warning">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed text-warning bg-dark" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                Qual o meu personagem favorito do filme?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body text-light">
-                                O meu personagem favorito do filme é Obi-Wan Kenobi.
-                                <br><br>
-
-                                <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    More info
+                <div class="col-12 col-lg-8 mx-auto">
+                    <div class="accordion accordion-flush" id="accordionFlushExample" data-bs-theme="dark">
+                        <div class="accordion-item bg-dark border-bottom border-warning">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed text-warning bg-dark" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Qual o meu personagem favorito do filme?
                                 </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-light">
+                                    O meu personagem favorito do filme é Obi-Wan Kenobi.
+                                    <br><br>
+                                    <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        More info
+                                    </button>
 
-                                <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content bg-dark text-light border border-warning">
-                                            <div class="modal-header border-warning">
-                                                <h1 class="modal-title fs-5 text-warning" id="exampleModalLabel">Menções
-                                                    honrosas de
-                                                    outros personagens favoritos que não estão no filme:</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <ul>
-                                                    <li>Ahsoka Tano</li>
-                                                    <li>Clone CT-9904 (Crosshair)</li>
-                                                    <li>Clone CT-9902 (Tech)</li>
-                                                    <li>Darth Maul</li>
-                                                    <li>Qui-Gon Jin</li>
-                                                </ul>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content bg-dark text-light border border-warning">
+                                                <div class="modal-header border-warning">
+                                                    <h1 class="modal-title fs-5 text-warning" id="exampleModalLabel">Menções honrosas de outros personagens favoritos que não estão no filme:</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <ul>
+                                                        <li>Ahsoka Tano</li>
+                                                        <li>Clone CT-9904 (Crosshair)</li>
+                                                        <li>Clone CT-9902 (Tech)</li>
+                                                        <li>Darth Maul</li>
+                                                        <li>Qui-Gon Jin</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="accordion-item bg-dark border-bottom border-warning">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed text-warning bg-dark" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo">
-                                Qual é a minha Soundtrack favorita que não está no filme?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body text-light">A minha favorita é a Across the Stars, presente no
-                                Episódio II:
-                                Ataque dos Clones
-                                <br>
-                                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                                    src="https://open.spotify.com/embed/track/3rUMH7i22tlkymhDPOmXUv?utm_source=generator&theme=0"
-                                    width="100%" height="152" frameBorder="0" allowfullscreen=""
-                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                                    loading="lazy"></iframe>
+                        <div class="accordion-item bg-dark border-bottom border-warning">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed text-warning bg-dark" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Qual é a minha Soundtrack favorita que não está no filme?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-light">
+                                    A minha favorita é a Across the Stars, presente no Episódio II: Ataque dos Clones
+                                    <br>
+                                    <iframe data-testid="embed-iframe" style="border-radius:12px; margin-top: 15px;"
+                                        src="https://open.spotify.com/embed/track/3rUMH7i22tlkymhDPOmXUv?utm_source=generator&theme=0"
+                                        width="100%" height="152" frameBorder="0" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                        loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item bg-dark border-bottom border-warning">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed text-warning bg-dark" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Qual minha parte favorita do filme?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body text-light">O duelo de Anakin e Obi-wan em Mustafar. A coreografia foi insana e frenética, e uma curiosidade é que teve que ser diminuída a velocidade no pós produção pois os atores estavam rápidos demais.</div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="accordion-item bg-dark border-bottom border-warning">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed text-warning bg-dark" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                aria-controls="flush-collapseThree">
-                                Qual minha parte favorita do filme?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body text-light">O duelo de Anakin e Obi-wan em Mustafar. A
-                                coreografia foi insana e
-                                frenética, e uma curiosidade é que teve que ser diminuída a velocidade no pós produção
-                                pois
-                                os atores estavam rápidos demais.</div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -453,31 +419,23 @@
 
     <hr class="border-danger opacity-100 mx-auto border-3 mt-5 mb-3" style="width: 50%;">
 
-
-
-    <div class="row px-4 px-md-5 mb-5">
-
-        <div class="col-12 text-center mb-4">
-            <h2 class="text-warning">Fim</h2>
-        </div>
-        <div class="col-12 col-md-10 col-lg-8 mx-auto">
-            <div class="alert bg-dark border border-warning border-2 text-light shadow text-center" role="alert">
-                <h3 class="mb-0 fs-4">Esse é o site, espero que tenham gostado.<br> E que a Força esteja com você!</h3>
+    <div class="container-fluid">
+        <div class="row px-4 px-md-5 mb-5">
+            <div class="col-12 text-center mb-4">
+                <h2 class="text-warning">Fim</h2>
+            </div>
+            <div class="col-12 col-md-10 col-lg-8 mx-auto">
+                <div class="alert bg-dark border border-warning border-2 text-light shadow text-center" role="alert">
+                    <h3 class="mb-0 fs-4">Esse é o site, espero que tenham gostado.<br> E que a Força esteja com você!</h3>
+                </div>
             </div>
         </div>
-
     </div>
-    </div>
-
-
-
 
     <footer class="text-center text-lg-start bg-black border-top border-danger border-2 mt-5">
-
         <section class="bg-dark text-light pt-5 pb-4">
             <div class="container text-center text-md-start">
                 <div class="row mt-3">
-
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <h6 class="text-uppercase fw-bold mb-4 text-warning">
                             IFSULDEMINAS Campus Passos
@@ -485,35 +443,29 @@
                         <p class="text-light">
                             Projeto desenvolvido em HTML, Bootstrap e o mínimo de CSS para a Disciplina de
                             Tecnologias Web Frontend.
-
                         </p>
                     </div>
-
-
 
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <h6 class="text-uppercase fw-bold mb-4 text-warning">
                             Navegação
                         </h6>
                         <p>
-                            <a href="#!" class="text-light text-decoration-none">Início</a>
+                            <a href="#inicio" class="text-light text-decoration-none nav-hover">Início</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-light text-decoration-none">Personagens</a>
+                            <a href="#personagens" class="text-light text-decoration-none nav-hover">Personagens</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-light text-decoration-none">Trilha Sonora</a>
+                            <a href="#soundtracks" class="text-light text-decoration-none nav-hover">Trilha Sonora</a>
                         </p>
-                        <p>
-                            <a href="#!" class="text-light text-decoration-none">Voltar ao topo</a>
-                        </p>
+                       
                     </div>
 
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <h6 class="text-uppercase fw-bold mb-4 text-warning">Contato</h6>
                         <p><i class="bi bi-house-door-fill text-danger me-3"></i> Passos, Minas Gerais, Brasil</p>
-                        <p><i class="bi bi-envelope-fill text-danger me-3"></i> vinicius2.alves@ifsuldeminas.edu.br
-                        </p>
+                        <p><i class="bi bi-envelope-fill text-danger me-3"></i> vinicius2.alves@ifsuldeminas.edu.br</p>
                     </div>
                 </div>
             </div>
@@ -521,8 +473,7 @@
 
         <div class="text-center p-4 text-light bg-black border-top border-secondary">
             © 2026 Copyright:
-            <span class="text-danger fw-bold">Vinicius dos Santos Oliveira Alves - 5°
-                período</span>
+            <span class="text-danger fw-bold">Vinicius dos Santos Oliveira Alves - 5° período</span>
         </div>
     </footer>
 
