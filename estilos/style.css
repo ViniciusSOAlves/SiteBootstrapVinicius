@@ -1,4 +1,10 @@
 
+[id] {
+    scroll-margin-top: 150px;
+}
+
+
+/* a parte que vira as imagens*/
 .img-padrao {
     height: 350px;
     width: 100%;
@@ -21,13 +27,14 @@
 .img-frente {
     position: relative;
     z-index: 2;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
 }
 
 .img-swap-container:hover .img-frente {
     opacity: 0;
 }
 
+/*o brilho em volta das div em amarelo quando passa o hover*/
 .card-sith {
     transition: border-color 0.3s ease, box-shadow 0.3s ease; 
 }
@@ -37,6 +44,8 @@
     box-shadow: 0 0 20px rgba(255, 193, 7, 0.7); 
     
 }
+
+/*hove da logo do filme na navegacao*/
 .logo-hover {
     transition: transform 0.3s ease, filter 0.3s ease;
     cursor: pointer;
@@ -47,6 +56,7 @@
     filter: drop-shadow(0 0 10px rgba(220, 53, 69, 0.8)); 
 }
 
+/*hover da navegacao*/
 .nav-hover {
     transition: color 0.3s ease, transform 0.2s ease;
 }
